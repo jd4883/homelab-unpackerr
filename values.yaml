@@ -120,5 +120,3 @@ onepassworditem:
   defaultVault: Kubernetes
   items:
     - item: unpackerr
-      name: unpackerr
-      type: Opaque
