@@ -117,7 +117,8 @@ unpackerr:
 # Also add unpackerr to onepassword-secrets values if using central sync; or rely on this chart when deploying to namespace unpackerr.
 onepassworditem:
   enabled: true
+  defaultVault: Kubernetes
   items:
-    - item: vaults/Kubernetes/items/unpackerr
+    - item: unpackerr
       name: unpackerr
       type: Opaque
