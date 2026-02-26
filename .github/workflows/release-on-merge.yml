@@ -25,7 +25,7 @@ jobs:
       - name: Lint chart
         run: |
           helm repo add bjw-s https://bjw-s-labs.github.io/helm-charts
-          helm repo add vquie https://vquie.github.io/helm-charts
+          helm repo add expectedbehaviors-op https://expectedbehaviors.github.io/OnePasswordItem-helm
           helm dependency update .
           helm lint .
 

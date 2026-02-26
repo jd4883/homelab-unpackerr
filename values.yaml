@@ -116,8 +116,7 @@ unpackerr:
 # 1Password item synced to Kubernetes secret "unpackerr" (envFrom). Item fields become secret keys — use UN_LIDARR_0_API_KEY, UN_RADARR_0_API_KEY, etc.
 # Also add unpackerr to onepassword-secrets values if using central sync; or rely on this chart when deploying to namespace unpackerr.
 onepassworditem:
-  secrets:
-    unpackerr:
-      - item: vaults/Kubernetes/items/unpackerr
-        name: unpackerr
-        type: Opaque
+  enabled: true
+  defaultVault: Kubernetes
+  items:
+    - item: unpackerr
